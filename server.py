@@ -10,7 +10,6 @@ import json
 import pickle
 import numpy as np
 
-import plugins/*
 
 def _help():
 	print("help is missing")
