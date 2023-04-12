@@ -21,7 +21,7 @@ def web_add(int1:int=0,int2:int=1):
     '''
 
 
-	return int1+int2+1
+	return int1+int2
 
 def web_mult(int1:int=0,int2:int=1):
 	return int1*int2
