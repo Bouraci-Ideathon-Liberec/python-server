@@ -34,7 +34,7 @@ def hash_file(filename=""):
 def reload_plugins():
 	folder = "plugins"
 	for name in os.listdir(folder):
-		if name[-3:] == ".py":
+		if (name[-3:] == ".py")and(name[0]!='_') :
 			module_name = name[:-3]
 
 			if module_name in globals().keys():
@@ -52,7 +52,9 @@ def update():
 	for module in plugins.keys():
 		for func in dir(globals()[module]):
 			if func[0] != '_':
-				router.add_api_route(str("/" + module + "/" + func),dict(inspect.getmembers(globals()[module]))[func])
+				dynamic_function=dict(inspect.getmembers(globals()[module]))[func]
+				if callable(dynamic_function):
+					router.add_api_route(str("/" + module + "/" + func),dynamic_function)
 
 
 @app.get("/help")
@@ -62,7 +64,13 @@ def list_functions():
 	for module in plugins.keys():
 		for func in dir(globals()[module]):
 			if func[0] != '_':
-				ret["/" + module + "/" + func]="/" + module + "/" + func + str(inspect.signature(dict(inspect.getmembers(globals()[module]))[func])) + '\n' + dict(inspect.getmembers(globals()[module]))[func].__doc__
+				dynamic_function=dict(inspect.getmembers(globals()[module]))[func]
+				if callable(dynamic_function):
+					ret["/" + module + "/" + func]="/" + module + "/" + func
+					if((inspect.signature(dynamic_function))!=None):
+						ret["/" + module + "/" + func]+= str(inspect.signature(dynamic_function))
+					if((dynamic_function.__doc__)!=None):
+						ret["/" + module + "/" + func] += '\n' + dynamic_function.__doc__
 	return ret
 
 
