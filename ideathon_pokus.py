@@ -8,6 +8,7 @@ print("\nrozdíl mezi lety:")
 print(data.diff(axis=1))
 fig, ax = plt.subplots()
 header=list(data)
+#negr
 size=data.shape
 for i in range(size[1]+1):
     nazev=data.index[i]
