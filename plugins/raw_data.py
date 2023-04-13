@@ -1,7 +1,6 @@
 #!/bin/env python3
 
-from pathlib import Path
-import os
+from pathlib import Path as _Path
 import hashlib
 import json
 
@@ -20,10 +19,10 @@ def _hashfile(filename=""):
 
 def list_datasets():
 	files_dict = {}
-	for p in Path( './data' ).rglob( '*' ):
+	for p in _Path('./data').rglob('*'):
 		if p.is_file():
 			file_hash = {}
-			file_hash["location"]=str(p)
+			file_hash["location"] = str(p)
 			file_hash["MD5"] = _hashfile(p)
 			file_hash["extenstion"] = p.suffix[1:]
 			files_dict[p.name] = file_hash
