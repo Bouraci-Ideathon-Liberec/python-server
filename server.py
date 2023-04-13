@@ -16,6 +16,7 @@ router = APIRouter()
 
 plugins = {}
 
+
 def _help():
 	print("help is missing")
 
@@ -31,30 +32,32 @@ def hash_file(filename=""):
 			md5.update(data)
 	return md5.hexdigest()
 
+
 def reload_plugins():
 	folder = "plugins"
 	for name in os.listdir(folder):
-		if (name[-3:] == ".py")and(name[0]!='_') :
+		if (name[-3:] == ".py") and (name[0] != '_'):
 			module_name = name[:-3]
 
 			if module_name in globals().keys():
 				if plugins[module_name] != hash_file(os.path.join(folder, name)):
-					globals()[module_name]=importlib.reload(globals()[module_name])
-					plugins[module_name]=hash_file(os.path.join(folder, name))
-					#print(module_name + " reloaded")
+					globals()[module_name] = importlib.reload(globals()[module_name])
+					plugins[module_name] = hash_file(os.path.join(folder, name))
+					# print(module_name + " reloaded")
 			else:
-				globals()[module_name]=importlib.import_module(folder +"."+ module_name)
-				plugins[module_name]=hash_file(os.path.join(folder, name))
-				#print(module_name + " imported")
+				globals()[module_name] = importlib.import_module(folder + "." + module_name)
+				plugins[module_name] = hash_file(os.path.join(folder, name))
+				# print(module_name + " imported")
+
 
 def update():
 	reload_plugins()
 	for module in plugins.keys():
 		for func in dir(globals()[module]):
 			if func[0] != '_':
-				dynamic_function=dict(inspect.getmembers(globals()[module]))[func]
+				dynamic_function = dict(inspect.getmembers(globals()[module]))[func]
 				if callable(dynamic_function):
-					router.add_api_route(str("/" + module + "/" + func),dynamic_function)
+					router.add_api_route(str("/" + module + "/" + func), dynamic_function)
 
 
 @app.get("/help")
@@ -64,12 +67,12 @@ def list_functions():
 	for module in plugins.keys():
 		for func in dir(globals()[module]):
 			if func[0] != '_':
-				dynamic_function=dict(inspect.getmembers(globals()[module]))[func]
+				dynamic_function = dict(inspect.getmembers(globals()[module]))[func]
 				if callable(dynamic_function):
-					ret["/" + module + "/" + func]="/" + module + "/" + func
-					if((inspect.signature(dynamic_function))!=None):
-						ret["/" + module + "/" + func]+= str(inspect.signature(dynamic_function))
-					if((dynamic_function.__doc__)!=None):
+					ret["/" + module + "/" + func] = "/" + module + "/" + func
+					if ((inspect.signature(dynamic_function)) is not None):
+						ret["/" + module + "/" + func] += str(inspect.signature(dynamic_function))
+					if ((dynamic_function.__doc__) is not None):
 						ret["/" + module + "/" + func] += '\n' + dynamic_function.__doc__
 	return ret
 
