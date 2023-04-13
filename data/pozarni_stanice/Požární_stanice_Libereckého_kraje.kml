@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="List1" id="List1">
+	<SimpleField name="FID" type="int"></SimpleField>
+	<SimpleField name="OBJECTID" type="int"></SimpleField>
+	<SimpleField name="Název" type="string"></SimpleField>
+	<SimpleField name="Typ" type="string"></SimpleField>
+	<SimpleField name="Provozovatel" type="string"></SimpleField>
+	<SimpleField name="Název_okresu" type="string"></SimpleField>
+	<SimpleField name="Kód_okresu_dle_číselníku_ČSÚ" type="string"></SimpleField>
+	<SimpleField name="Název_ORP" type="string"></SimpleField>
+	<SimpleField name="Kód_ORP_dle_číselníku_ČSÚ" type="int"></SimpleField>
+	<SimpleField name="Název_obce" type="string"></SimpleField>
+	<SimpleField name="Kód_obce_dle_číselníku_ČSÚ" type="int"></SimpleField>
+	<SimpleField name="Název_ulice" type="string"></SimpleField>
+	<SimpleField name="Číslo_popisné_nebo_evidenční_po" type="int"></SimpleField>
+	<SimpleField name="Typ_čísla_domovního" type="string"></SimpleField>
+	<SimpleField name="Číslo_orientační" type="int"></SimpleField>
+	<SimpleField name="PSČ" type="string"></SimpleField>
+	<SimpleField name="Zápis_vektorové_geometrie" type="string"></SimpleField>
+	<SimpleField name="Zeměpisná_délka_v_souřadnicovém" type="float"></SimpleField>
+	<SimpleField name="Zeměpisná_šířka_v_souřadnicovém" type="float"></SimpleField>
+</Schema>
+<Folder><name>List1</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">1</SimpleData>
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="Název">Požární stanice Česká Lípa</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Česká Lípa</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0511</SimpleData>
+		<SimpleData name="Název_ORP">Česká Lípa</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5101</SimpleData>
+		<SimpleData name="Název_obce">Česká Lípa</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">561380</SimpleData>
+		<SimpleData name="Název_ulice">Karla Poláčka</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">3152</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="PSČ">47001</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.6707394 14.5438844)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">14.5438844</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.6707394</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>14.5438844,50.6707394000001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">2</SimpleData>
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="Název">Požární stanice Doksy</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Česká Lípa</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0511</SimpleData>
+		<SimpleData name="Název_ORP">Česká Lípa</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5101</SimpleData>
+		<SimpleData name="Název_obce">Doksy</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">561495</SimpleData>
+		<SimpleData name="Název_ulice">Pražská</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">1033</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="PSČ">47201</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.5674550 14.6460092)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">14.6460092</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.567455</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>14.6460092,50.5674550000001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">3</SimpleData>
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="Název">Požární stanice Jablonec nad Nisou</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Jablonec nad Nisou</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0512</SimpleData>
+		<SimpleData name="Název_ORP">Jablonec nad Nisou</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5103</SimpleData>
+		<SimpleData name="Název_obce">Jablonec nad Nisou</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">563510</SimpleData>
+		<SimpleData name="Název_ulice">Palackého</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">4680</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="Číslo_orientační">91</SimpleData>
+		<SimpleData name="PSČ">46605</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.7435483 15.1588581)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">15.1588581</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.7435483</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.1588581,50.7435483</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">4</SimpleData>
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="Název">Požární stanice Jablonné v Podještědí</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Liberec</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0513</SimpleData>
+		<SimpleData name="Název_ORP">Liberec</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5105</SimpleData>
+		<SimpleData name="Název_obce">Jablonné v Podještědí</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">561631</SimpleData>
+		<SimpleData name="Název_ulice">Lidická</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">238</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="PSČ">47125</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.7627469 14.7594569)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">14.7594569</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.7627469</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>14.7594569,50.7627469000001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">5</SimpleData>
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="Název">Požární stanice Jilemnice</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Semily</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0514</SimpleData>
+		<SimpleData name="Název_ORP">Jilemnice</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5104</SimpleData>
+		<SimpleData name="Název_obce">Rokytnice nad Jizerou</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">577456</SimpleData>
+		<SimpleData name="Název_ulice">Roztocká</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">506</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="PSČ">51401</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.6043272 15.5104147)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">15.5104147</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.6043272</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.5104147000001,50.6043272000001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">6</SimpleData>
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="Název">Požární stanice Liberec</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Liberec</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0513</SimpleData>
+		<SimpleData name="Název_ORP">Liberec</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5105</SimpleData>
+		<SimpleData name="Název_obce">Liberec</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">563889</SimpleData>
+		<SimpleData name="Název_ulice">Šumavská</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">414</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="Číslo_orientační">11</SimpleData>
+		<SimpleData name="PSČ">46001</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.7577144 15.0532381)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">15.0532381</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.7577144</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.0532381,50.7577144000001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">7</SimpleData>
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="Název">Požární stanice Raspenava</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Liberec</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0513</SimpleData>
+		<SimpleData name="Název_ORP">Frýdlant</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5102</SimpleData>
+		<SimpleData name="Název_obce">Raspenava</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">564371</SimpleData>
+		<SimpleData name="Název_ulice">Nádražní</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">648</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="PSČ">46401</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.8973261 15.1249100)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">15.12491</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.8973261</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.1249100000001,50.8973261</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">8</SimpleData>
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="Název">Požární stanice Semily</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Semily</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0514</SimpleData>
+		<SimpleData name="Název_ORP">Semily</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5107</SimpleData>
+		<SimpleData name="Název_obce">Semily</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">576964</SimpleData>
+		<SimpleData name="Název_ulice">nábřeží Svatopluka Čecha</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">185</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="PSČ">51301</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.6004939 15.3338025)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">15.3338025</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.6004939</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.3338025,50.6004939000001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">9</SimpleData>
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="Název">Požární stanice Tanvald</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Jablonec nad Nisou</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0512</SimpleData>
+		<SimpleData name="Název_ORP">Tanvald</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5108</SimpleData>
+		<SimpleData name="Název_obce">Tanvald</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">563820</SimpleData>
+		<SimpleData name="Název_ulice">Protifašistických bojovníků</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">627</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="PSČ">46841</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.7413822 15.3104275)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">15.3104275</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.7413822</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.3104275000001,50.7413822</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#List1">
+		<SimpleData name="FID">10</SimpleData>
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="Název">Požární stanice Turnov</SimpleData>
+		<SimpleData name="Typ">požární stanice</SimpleData>
+		<SimpleData name="Provozovatel">Hasičský záchranný sbor Libereckého kraje</SimpleData>
+		<SimpleData name="Název_okresu">Semily</SimpleData>
+		<SimpleData name="Kód_okresu_dle_číselníku_ČSÚ">CZ0514</SimpleData>
+		<SimpleData name="Název_ORP">Turnov</SimpleData>
+		<SimpleData name="Kód_ORP_dle_číselníku_ČSÚ">5109</SimpleData>
+		<SimpleData name="Název_obce">Turnov</SimpleData>
+		<SimpleData name="Kód_obce_dle_číselníku_ČSÚ">577626</SimpleData>
+		<SimpleData name="Název_ulice">Trávnice</SimpleData>
+		<SimpleData name="Číslo_popisné_nebo_evidenční_po">863</SimpleData>
+		<SimpleData name="Typ_čísla_domovního">č.p.</SimpleData>
+		<SimpleData name="PSČ">51101</SimpleData>
+		<SimpleData name="Zápis_vektorové_geometrie">POINT(50.5891975 15.1544353)</SimpleData>
+		<SimpleData name="Zeměpisná_délka_v_souřadnicovém">15.1544353</SimpleData>
+		<SimpleData name="Zeměpisná_šířka_v_souřadnicovém">50.5891975</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.1544353,50.5891975000001</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
