@@ -19,8 +19,8 @@ def table():
 
 
 def get_closest(X: float = 0, Y: float = 0):
-	X_list = list(df["Y"])
-	Y_list = list(df["X"])
+	X_list = list(df["X"])
+	Y_list = list(df["Y"])
 	point_list = []
 	compare = []
 	compare.append(Y)
@@ -39,5 +39,4 @@ def get_closest(X: float = 0, Y: float = 0):
 		if new_dist < dist:
 			dist = new_dist
 			saved_index = i
-
 	return _geo_file.normalize_dict(json.loads(df.loc[saved_index].to_json()))

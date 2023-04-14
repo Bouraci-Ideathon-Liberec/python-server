@@ -19,8 +19,8 @@ def table():
 
 
 def get_closest(X: float = 0, Y: float = 0):
-	X_list = list(df["Y"])
-	Y_list = list(df["X"])
+	X_list = list(df["X"])
+	Y_list = list(df["Y"])
 	point_list = []
 	compare = []
 	compare.append(Y)
