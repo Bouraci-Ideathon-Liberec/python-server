@@ -40,4 +40,4 @@ def get_closest(X: float = 0, Y: float = 0):
 			dist = new_dist
 			saved_index = i
 
-	return json.dumps(_geo_file.normalize_dict(df.loc[saved_index].to_dict()))
+	return _geo_file.normalize_dict(json.loads(df.loc[saved_index].to_json()))
