@@ -1,5 +1,6 @@
 #!/bin/env python3
 
+import unidecode
 import importlib
 import os
 import sys

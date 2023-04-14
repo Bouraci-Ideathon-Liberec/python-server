@@ -2,6 +2,14 @@
 
 import shapefile
 import numpy as np
+import unidecode
+
+
+def normalize_dict(dictionary):
+	edited_dict = {}
+	for key in dictionary.keys():
+		edited_dict[unidecode.unidecode(key).lower()] = dictionary[key]
+	return edited_dict
 
 
 def distance(X1, Y1, X2, Y2):
