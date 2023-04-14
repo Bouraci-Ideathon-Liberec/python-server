@@ -15,7 +15,7 @@ def get_points(index: int = -1):
 	else:
 		shape = _shapes[index]
 		shapes[str(shape.shape)] = shape.shape.points
-	return json.dumps(shapes)
+	return json.loads(json.dumps(shapes))
 
 
 def get_info(index: int = -1):
@@ -27,13 +27,13 @@ def get_info(index: int = -1):
 	else:
 		shape = _shapes[index]
 		shapes[str(shape.record.oid)] = shape.record.as_dict()
-	return json.dumps(shapes)
+	return json.loads(json.dumps(shapes))
 
 
 def get_shape(index: int = 0):
 	shape = _shapes[index]
-	return json.dumps(_geo_file.raw_shape(shape))
+	return json.loads(json.dumps(_geo_file.raw_shape(shape)))
 
 
 def num_of_shapes():
-	return json.dumps(len(_shapes))
+	return json.loads(json.dumps(len(_shapes)))
